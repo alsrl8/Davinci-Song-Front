@@ -1,79 +1,14 @@
 .my-board {
-    width: 1000px;
-
-    display: flex;
-    flex-direction: row;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100vw;
 }
 
 .my-board .holder {
-    width: 1000px;
+
 }
 
-.my-board .holder .primary-black {
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 1px solid #333333;
-}
-
-.my-board .holder .primary-black:hover {
-    background-color: #2b2b2b;
-    transform: scale(1.02);
-}
-
-.my-board .holder .primary-black:active {
-    background-color: #000000;
-    border-color: #000000;
-    transform: scale(0.98);
-}
-
-/* Black-based Secondary Button */
-.my-board .holder .secondary-black {
-    background-color: #555555;
-    color: #FFFFFF;
-    border: 1px solid #777777;
-}
-
-.my-board .holder .secondary-black:hover {
-    background-color: #6e6e6e;
-}
-
-.my-board .holder .secondary-black:active {
-    background-color: #4d4d4d;
-    border-color: #666666;
-    transform: scale(0.98);
-}
-
-.my-board .holder .primary-white {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 1px solid #DDDDDD;
-}
-
-.my-board .holder .primary-white:hover {
-    background-color: #F2F2F2;
-    color: #111111;
-    border-color: #CCCCCC;
-    transform: scale(1.02);
-}
-
-.my-board .holder .primary-white:active {
-    background-color: #F2F2F2;
-    border-color: #BBBBBB;
-    transform: scale(0.98);
-}
-
-.my-board .holder .secondary-white {
-    background-color: #F2F2F2;
-    color: #000000;
-    border: 1px solid #CCCCCC;
-}
-
-.my-board .holder .secondary-white:hover {
-    background-color: #E0E0E0;
-}
-
-.my-board .holder .secondary-white:active {
-    background-color: #D0D0D0;
-    border-color: #BBBBBB;
-    transform: scale(0.98);
+.my-board .buttons {
+    padding-left: 20px;
 }

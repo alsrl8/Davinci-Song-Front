@@ -1,16 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './MyBoard.css'
-import {Flex, Button} from 'antd';
+import {Button, Col, Flex, Row} from 'antd';
+import NumberBlock from "../piece/NumberBlock";
 
 
 const MyBoard = () => {
     return (
         <div className="my-board">
-            <Flex className='holder' justify={'space-between'} align={'start'}>
-                <Button className='primary-black' type='primary'>Primary</Button>
-                <Button className='primary-black' type='primary'>Primary</Button>
-                <Button className='primary-white' type='primary'>Primary</Button>
-            </Flex>
+            <Row>
+                <Col span={20}>
+                    <Flex className='holder' justify={'space-between'} align={'start'}>
+                        <NumberBlock num={10} color='black'/>
+                        <NumberBlock num={10} color='white'/>
+                        <NumberBlock num={10} color='black'/>
+                        <NumberBlock num={10} color='white'/>
+                    </Flex>
+                </Col>
+                <Col span={4}>
+                    <div className='buttons'><Button type='primary'>NEXT</Button></div>
+
+                </Col>
+            </Row>
         </div>
     );
 };
